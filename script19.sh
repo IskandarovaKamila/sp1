@@ -13,11 +13,11 @@ do
 	read action
 	if [[ $action = 1 ]]
 	then
-		sudo passwd -l $name
+		passwd -l $name
 	else
 		if [[ $action = 2 ]]
 		then
-			sudo passwd -u $name
+			passwd -u $name
 		else
 			echo "Попробуй заново."
 		fi
